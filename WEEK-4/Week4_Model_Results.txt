@@ -1,0 +1,25 @@
+Week 4 Model Results
+Dataset: logistics_data_cleaned.csv
+Rows used: 500
+Target: delivery_time_hours
+Train/Test split: 80% / 20%
+
+Model comparison:
+            model      MAE     RMSE       R2
+Linear Regression 0.959354 1.228185 0.878837
+    Random Forest 0.990020 1.280576 0.868279
+Gradient Boosting 1.007374 1.290079 0.866317
+
+Best model by test RMSE: Linear Regression
+
+5-fold CV RMSE:
+Mean: 1.1302
+Std: 0.0736
+
+Tuned model results:
+                                                                      best_params  tuned_MAE  tuned_RMSE  tuned_R2
+{'model__learning_rate': 0.03, 'model__max_depth': 2, 'model__n_estimators': 200}   0.961837    1.249702  0.874554
+
+Optimization scenario:
+ baseline_mean_predicted_hours  optimized_mean_predicted_hours  estimated_mean_hours_reduced  records_in_scenario
+                      8.252156                        8.002164                      0.249992                  500

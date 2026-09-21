@@ -1,0 +1,2 @@
+best_params,tuned_MAE,tuned_RMSE,tuned_R2
+"{'model__learning_rate': 0.03, 'model__max_depth': 2, 'model__n_estimators': 200}",0.9618372843651203,1.2497019795922786,0.87455404082904
